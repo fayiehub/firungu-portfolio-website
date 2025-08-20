@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith Irungu • Cloud Security Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+  <header>
+    <!-- Desktop nav -->
+    <nav id="desktop-navbar" role="navigation">
+      <div class="logo">Faith Irungu</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile nav -->
+    <div id="hamburger-nav" class="hamburger-menu">
+      <div class="logo">Faith Irungu</div>
+      <button
+        class="hamburger-icon"
+        aria-label="Open menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        onclick="toggleMenu()"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav
+        id="mobile-menu"
+        class="menu-links"
+        role="navigation"
+        aria-hidden="true"
+      >
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section-text-p1">Hello👋, I’m Faith🙂</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-containers section-container">
+        <div class="section_pic-container">
+          <img src="assets/profile.jpeg" alt="Portrait" id="profile-pic">
+        </div>
+        <div class="about-details-container">
+          <!-- Replace this paragraph with your final About Me blurb -->
+          <p class="section-text-p2">
+            I am an early career professional with over a year of proven experience in building and managing secure, scalable and highly available cloud environments across IaaS, PaaS, and SaaS. I have worked extensively with Microsoft Azure, AWS, and Python, focusing on cloud infrastructure, automation, and security. In my work at the United Nations, I collaborated with global ICT teams to implement cloud solutions, improve 
+compliance, and drive productivity. I hold certifications in Azure and AWS cloud platforms as well as in cybersecurity. I am looking for opportunities to optimize cloud environments and contribute to innovative cloud-based solutions that align with business goals.
+          </p>
+
+          <!-- Skills list -->
+          <div class="details-container">
+            <h2 class="experience-subtitle">Skills & Tools</h2>
+            <ul class="skills-list">
+              <li>Azure (AZ-900, AZ-104)</li>
+              <li>AWS (CCP)</li>
+              <li>Terraform & ARM Templates</li>
+              <li>Bash & Python Scripting</li>
+              <li>CI/CD (Azure DevOps)</li>
+              <li>Zero-Trust & IAM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <img src="assets/angles-down-solid.svg" alt="Scroll down arrow" class="icon arrow" onclick="location.href='#experience'"> -->
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section-text-p1">What I’ve done</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <!-- Example experience item -->
+        <div class="details-container color-container">
+          <h2 class="experience-subtitle">Cloud Services Engineer @ United Nations Development Program</h2>
+          <p>At UNDP, I played a key role in driving cloud infrastructure initiatives that achieved 99.9% uptime across Azure environments, while upholding rigorous governance and security standards. I accelerated deployment cycles by automating CI/CD pipelines using Azure DevOps, ARM templates, and Terraform—transforming manual processes into scalable, error-resistant workflows. My contributions strengthened network security, optimized cloud expenditure, and enhanced disaster recovery through proactive monitoring and backup strategies. I also authored internal documentation that improved team efficiency, and delivered personalized technical support to global users, elevating customer satisfaction. In addition to technical execution, I contributed to operational continuity by planning and coordinating workshops and managing budgets.</p>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-subtitle">Cybersecurity Intern @ Afyarekod</h2>
+          <p>During my cybersecurity internship, I enhanced cloud security posture by over 15% through the implementation of Microsoft Defender for Cloud recommendations, directly addressing key vulnerabilities. I conducted regular security assessments across cloud, web, and mobile applications, strengthening overall security hygiene. My role included configuring and monitoring SIEM systems, where I effectively identified and escalated potential threats through real-time event analysis. I also authored bi-weekly reports to communicate security improvements and participated in foundational red teaming exercises, gaining practical exposure to offensive security tactics. This experience sharpened my technical judgment and reinforced my commitment to proactive, resilient cloud security practices.</p>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-subtitle">Cloud Trainee @ Ajira Digital Program</h2>
+          <p>During my time at the Ajira Digital Program, I deepened my cloud infrastructure expertise through hands-on AWS labs and projects, gaining practical experience with EC2, S3, IAM, Lambda, and RDS. I applied tools like Trusted Advisor and Cost Explorer to recommend resource optimizations, reducing simulated cloud spend and addressing budget constraints. My work strengthened AWS security compliance by configuring IAM policies, managing access controls, and deploying monitoring tools such as CloudWatch and Config to resolve misconfigurations. I also sharpened incident response capabilities through collaborative troubleshooting exercises, and built core technical fluency in cloud computing, networking, Linux administration, and Python scripting, thus laying a strong foundation for professional cloud roles.</p>
+        </div>
+
+      </div>
+      <!-- <img src="assets/angles-down-solid.svg" alt="Scroll down arrow" class="icon arrow" onclick="location.href='#projects'"> -->
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section-text-p1">Browse my recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <div class="project-container">
+        <!-- Project One -->
+        <div class="project-card">
+          <img src="assets/sentinel_logo.png" alt="Microsoft Sentinel" class="project-img">
+          <div class="project-content">
+            <h2 class="project-title">Microsoft Sentinel Setup</h2>
+            <p class="project-description">
+              Configured Microsoft Sentinel in an Azure environment for advanced threat detection and security monitoring.
+            </p>
+            <div class="project-buttons">
+              <button class="project-btn" onclick="location.href='https://medium.com/@patriciaserwaakodieagyekum/configuring-microsoft-sentinel-in-an-azure-environment-45fef53dbddc'">Read More</button>
+              <button class="project-btn primary" onclick="location.href='https://docs.google.com/presentation/d/1S0_FyLEd86lSl2RxBgcu9FbIkp0g6Zgnxevzy6FFC_Y/edit#slide=id.g2903202c4c4_0_8'">See Demo</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Two -->
+        <div class="project-card">
+          <img src="assets/ec2.png" alt="Diagram of EC2 instance" class="project-img">
+          <div class="project-content">
+            <h2 class="project-title">EC2 Linux Rescue</h2>
+            <p class="project-description">
+              Demonstrated techniques for regaining access to compromised EC2 Linux instances through systematic troubleshooting.
+            </p>
+            <div class="project-buttons">
+              <button class="project-btn" onclick="location.href='https://medium.com/@patriciaserwaakodieagyekum/regaining-access-to-your-ec2-linux-instance-111596e3e459'">Read More</button>
+              <button class="project-btn primary" onclick="window.open('https://drive.google.com/file/d/1d6NIo360QDv5Djd7uf62OaCcoKyaq8rE/view?usp=drive_link')">See Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section-text-p1">Get in touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="assets/email.svg" alt="Email icon" class="icon contact-icon">
+          <p><a href="mailto:fayieirungu@gmail.com">fayieirungu@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="assets/linkedin.svg" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/faith-irungu/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2025 Faith Irungu. All Rights Reserved.</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
